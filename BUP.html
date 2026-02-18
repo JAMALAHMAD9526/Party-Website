@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>भारतीय उड़ान पार्टी</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background:url("image.png") no-repeat center center;
+      background-size: contain;
+      padding: 160px 20px;
+      
+      color: #ccc;
+      text-align: center;
+    }
+    .logo {
+      height: 80px;
+    }
+    .slogan {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #333;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    section {
+      padding: 40px 20px;
+      background-color: white;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+    input, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px;
+      background-color: #138808;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0d5f05;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>भारतीय उड़ान पार्टी</h1>
+    <p class="slogan">उड़ान हर भारतीय की</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">होम</a></li>
+      <li><a href="#about">हमारे बारे में</a></li>
+      <li><a href="#leadership">नेतृत्व</a></li>
+      <li><a href="#initiatives">पहल</a></li>
+      <li><a href="#contact">संपर्क करें</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>स्वागत है भारतीय उड़ान पार्टी में</h2>
+    <p>एक नई सोच, एक नया भारत। गाँव से शुरू, देश की उड़ान तक।</p>
+  </section>
+
+  <section id="about">
+    <h2>हमारे बारे में</h2>
+    <p>भारतीय उड़ान पार्टी की स्थापना जमाल अहमद द्वारा ग्रामीण विकास, पारदर्शिता और युवाओं की भागीदारी के लिए की गई है।</p>
+  </section>
+
+  <section id="leadership">
+    <h2>हमारा नेतृत्व</h2>
+    <p><strong>जमाल अहमद</strong> – संस्थापक और ग्राम प्रधान पद के उम्मीदवार। युवा सोच, ईमानदार राजनीति और जनसेवा में समर्पित।</p>
+  </section>
+
+  <section id="initiatives">
+    <h2>हमारी पहल</h2>
+    <ul>
+      <li>हर घर में सरकारी योजनाओं की पहुंच</li>
+      <li>महिला सशक्तिकरण और सुरक्षा</li>
+      <li>युवाओं के लिए शिक्षा और रोजगार</li>
+      <li>स्वच्छ और आत्मनिर्भर गाँव</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>संपर्क करें</h2>
+    <form>
+      <input type="text" placeholder="आपका नाम" required />
+      <input type="email" placeholder="आपका ईमेल" required />
+      <textarea placeholder="आपका संदेश"></textarea>
+      <button type="submit">भेजें</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 भारतीय उड़ान पार्टी | जमाल अहमद</p>
+  </footer>
+
+  <script>
+    document.querySelector("form").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("आपका संदेश भेज दिया गया है! धन्यवाद।");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
